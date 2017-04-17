@@ -11,7 +11,12 @@
 </head>
 <body>
   <h1>Brittani Gets Baptized</h1>
-  <div class="slideshow-conatiner">
+  <div class="controls">
+    <button type='button' class='pictures'>Pictures</button>
+    <button type='button' class='movies'>Videos</button>
+  </div>
+
+  <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">1/11</div>
       <img src="images/baptize.jpg" alt="">
@@ -66,12 +71,11 @@
       <div class="numbertext">11/11</div>
       <img src="images/baptize11.jpg" alt="">
     </div>
-
-    <a class='prev'>&#10094;</a>
-    <a class='next'>&#10095;</a>
   </div>
   <br>
-  <div style='text-align:center'>
+  <div style='text-align:center' class='pDots'>
+    <a class='prev'>&#10094;</a>
+
     <span class='dot' target='1'></span>
     <span class='dot' target='2'></span>
     <span class='dot' target='3'></span>
@@ -83,6 +87,31 @@
     <span class='dot' target='9'></span>
     <span class='dot' target='10'></span>
     <span class='dot' target='11'></span>
+    <a class='next'>&#10095;</a>
+  </div>
+
+  <div class="video">
+    <div class="myVslides">
+      <div class="Vnumbertext">1/2</div>
+      <video controls>
+        <source src='images/Baptize.m4v'>
+          Your browser does not support this video.
+      </video>
+    </div>
+
+    <div class="myVslides">
+      <div class="Vnumbertext">2/2</div>
+      <video controls>
+        <source src='images/baptize2.m4v'>
+          Your browser does not support this video.
+      </video>
+    </div>
+  </div>
+  <div class="mDots" style='text-align:center'>
+    <a class='mPrev'>&#10094;</a>
+    <span class='vDot' target='1'></span>
+    <span class='vDot' target='2'></span>
+    <a class='mNext'>&#10095;</a>
   </div>
 </body>
 </html>

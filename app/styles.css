@@ -9,41 +9,48 @@ img{
   height:600px;
   width:600px;
 }
+.controls{
+  text-align:center;
+  margin-bottom:20px;
+}
+button{
+  cursor:pointer;
+}
 body{
-  background-color:gray;
+  background-color:teal;
   font-family:Verdana, sans-serif;
   margin:0;
 }
 .mySlides{
   display:none;
-  margin-left:25%;
+}
+.myVslides{
+  display:none;
 }
 .slideshow-container{
   max-width:1000px;
   position:relative;
   margin-left:15em;
 }
-.prev, .next{
+.video{
+  max-width:100px;
+  position:relative;
+  margin-left:20em;
+}
+.prev, .next, .mNext, .mPrev{
   cursor:pointer;
-  position:absolute;
-  top:50%;
-  width:auto;
-  padding:16px;
-  margin-top:-22px;
-  color:darkgray;
   font-weight:bold;
-  font-size:2.5em;
   transition:0.6s ease;
-  border-radius:0 3px 3px 0;
+  font-size:2.5em;
+  color:darkgray;
 }
-.next{
-  right:15%;
-  border-radius:3px 0 0 3px;
+.prev, .mPrev{
+  margin-right:3em;
 }
-.prev{
-  left:19%;
+.next, .mNext{
+  margin-left:3em;
 }
-.prev:hover, .next:hover{
+.prev:hover, .next:hover, .mNext:hover, .mPrev:hover{
   background-color:rgba(0,0,0,0.8);
   border-radius:10px;
 }
@@ -52,9 +59,16 @@ body{
   font-size:14px;
   padding:8px 12px;
   position:absolute;
-  top:4em;
+  top:0;
 }
-.dot{
+.vNumbertext{
+  color:#f2f2f2;
+  font-size:14px;
+  position:absolute;
+  padding:8px 12px;
+  margin-left:7em;
+}
+.dot, .vDot{
   cursor:pointer;
   height:13px;
   width:13px;
@@ -66,4 +80,11 @@ body{
 }
 .active, .dot:hover{
   background-color:#717171;
+}
+video{
+  height:500px;
+  width:500px;
+}
+.video{
+  text-align:center;
 }
