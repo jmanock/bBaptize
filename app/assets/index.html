@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Brit Gets Baptized</title>
-  <link rel="stylesheet" href="/app.css">
-  <script src="/app.js"></script>
-  <script>require('initialize');</script>
-  <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-</head>
+<!-- <!DOCTYPE html>
+
 <body>
   <div class="conatiner">
     <h1>Brit Gets Baptized!</h1>
     <!-- <video width='240' height='320' controls>
       <source src='images/Baptize.m4v'>
         Your browser does not support the video.
-    </video> -->
+    </video>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext">1/6</div>
@@ -51,7 +40,7 @@
             <img src="images/baptize5.jpg" alt="">
             <div class="text">Something</div>
           </div>
-          <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
+          <a class='prev' onClick='plusSlides(-1)'>&#10094;</a>
           <a class='next' onclick='plusSlides(1)'>&#10095;</a>
     </div>
     <div style='text-align:center'>
@@ -63,4 +52,104 @@
       <span class='dot' onclick='currentSlide(6)'></span>
     </div>
   </div>
+</body> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brit Gets Baptized</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js"></script>
+  <script>require('initialize');</script>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="images/baptize.jpg" >
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="images/baptize1.jpg">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="images/baptize2.jpg">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="images/baptize3.jpg" >
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="images/baptize4.jpg">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="images/baptize5.jpg">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
+</html>

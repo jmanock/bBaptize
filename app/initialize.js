@@ -26,10 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //   slides[slideIndex-1].style.display = 'block';
   //   dots[slideIndex-1].className += ' active';
   // }
-  $(document).ready(function(){
-    $('.prev').on('click', function(){
-      console.log('helloFriend');
-    })
-  })
+  
+
 
 });
