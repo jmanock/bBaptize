@@ -3,18 +3,34 @@
 }
 h1{
   text-align:center;
+  padding-top:10px;
+  text-decoration:underline;
 }
 img{
   border-radius:15px;
   height:600px;
   width:600px;
 }
-.controls{
+.controlls{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:10px;
+}
+.movies, .pictures{
+  cursor:pointer;
+  margin-right:10px;
 }
 button{
+  border-radius:12px;
+  border:none;
+  color:black;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:16px;
+  margin:4px 2px;
   cursor:pointer;
+  background-color:darkgray;
 }
 body{
   background-color:teal;
@@ -26,6 +42,7 @@ body{
 }
 .myVslides{
   display:none;
+  margin-bottom:10px;
 }
 .slideshow-container{
   max-width:1000px;
@@ -87,4 +104,17 @@ video{
 }
 .video{
   text-align:center;
+}
+header, footer{
+  background-color:#2b2929;
+  color:white;
+  text-align:center;
+}
+header{
+  width:100%;
+  height:10%;
+  margin-bottom:20px;
+}
+footer{
+
 }
