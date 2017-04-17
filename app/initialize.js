@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-  $('.movies').hide();
-  $('.video').on('click', function(e){
-    e.preventDefault();
-    $('.slideshow-container').hide();
-    $('.dot').hide();
-    $('.movies').show();
-  });
-  $('.pictures').on('click', function(){
-    $('.slideshow-container').show();
-    $('.dot').show();
-    $('.movies').hide();
-  });
+  // $('.movies').hide();
+  // $('.video').on('click', function(e){
+  //   e.preventDefault();
+  //   $('.slideshow-container').hide();
+  //   $('.dot').hide();
+  //   $('.movies').show();
+  // });
+  // $('.pictures').on('click', function(){
+  //   $('.slideshow-container').show();
+  //   $('.dot').show();
+  //   $('.movies').hide();
+  // });
   /*
     ~ Add header/ footer
     ~ Change color of buttons
