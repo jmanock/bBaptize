@@ -16,6 +16,7 @@ body{
 }
 .mySlides{
   display:none;
+  margin-left:25%;
 }
 .slideshow-container{
   max-width:1000px;
@@ -29,28 +30,40 @@ body{
   width:auto;
   padding:16px;
   margin-top:-22px;
-  color:green;
+  color:darkgray;
   font-weight:bold;
   font-size:2.5em;
   transition:0.6s ease;
   border-radius:0 3px 3px 0;
 }
 .next{
-  right:0;
+  right:15%;
+  border-radius:3px 0 0 3px;
+}
+.prev{
+  left:19%;
+}
+.prev:hover, .next:hover{
+  background-color:rgba(0,0,0,0.8);
+  border-radius:10px;
 }
 .numbertext{
   color:#f2f2f2;
-  font-size:12px;
+  font-size:14px;
   padding:8px 12px;
   position:absolute;
-  top:0;
+  top:4em;
 }
 .dot{
   cursor:pointer;
   height:13px;
   width:13px;
-  margin:0 12px;
+  margin:0 2px;
   background-color:#bbb;
   display:inline-block;
+  border-radius:5px;
   transition: bakcground-color 0.6s ease;
+}
+.active, .dot:hover{
+  background-color:#717171;
 }
