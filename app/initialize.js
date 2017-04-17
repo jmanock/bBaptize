@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.movies').hide();
     $('#movieDots').hide();
   });
+
   /*
     ~ Add header/ footer
     ~ Change color of buttons
