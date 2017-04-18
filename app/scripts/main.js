@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $('.pictures').on('click', function(){
     $('.movies').hide();
-    $('.mDots').hode();
+    $('.mDots').hide();
     $('.slideshow-container').show();
     $('.pDots').show();
   });// End `.pictures`
