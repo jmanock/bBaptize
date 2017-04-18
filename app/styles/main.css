@@ -45,7 +45,7 @@ body{
 .slidshow-container{
   max-width:1000px;
   position:relative;
-  margin-left:7%:
+  margin-left:7%;
 }
 .prev, .next, .mNext, .mPrev{
   cursor:pointer;
@@ -79,6 +79,7 @@ body{
   left:26em;
 }
 .dot, .vDot{
+  border-radius:5px;
   cursor:pointer;
   height:13px;
   width:13px;
