@@ -1,13 +1,20 @@
  $(document).ready(function(){
-//   $('.video').hide();
-//   $('.mDots').hide();
+  $('.movies').hide();
+  $('.mDots').hide();
 
   $('.pictures').on('click', function(){
-
+    $('.movies').hide();
+    $('.mDots').hide();
+    $('.slideshow-container').show();
+    $('.pDots').show();
+    showSlides(slideIndex, 'v');
   });// End `.Pictures`
 
-  $('.movies').on('click', function(){
-    console.log('this is movies');
+  $('.videoLink').on('click', function(){
+    $('.movies').show();
+    $('.mDots').show();
+    $('.slideshow-container').hide();
+    $('.pDots').hide();
   });// End `.Movies`
 
   $('.dot').on('click', function(){

@@ -47,7 +47,6 @@ body{
 .slideshow-container, .video{
   max-width:1000px;
   position:relative;
-  margin-left:15em;
 }
 .prev, .next, .mNext, .mPrev{
   cursor:pointer;
