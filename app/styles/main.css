@@ -2,7 +2,6 @@
   box-sizing:border-box;
 }
 h1{
-  text-align:center;
   padding-top:10px;
   text-decoration:underline;
 }
@@ -44,9 +43,10 @@ body{
   display:none;
   margin-bottom:10px;
 }
-.slideshow-container, .video{
+.slideshow-container{
   max-width:1000px;
   position:relative;
+  margin-left:7%;
 }
 .prev, .next, .mNext, .mPrev{
   cursor:pointer;
@@ -62,15 +62,23 @@ body{
   margin-left:3em;
 }
 .prev:hover, .next:hover, .mNext:hover, .mPrev:hover{
-  background-color:rgba(0,0,0,0.8);
+  /*background-color:rgba(0,0,0,0.8);*/
+  color:black;
   border-radius:10px;
 }
-.numbertext, .vNumbertext{
+.numbertext{
   color:#f2f2f2;
-  font-size:14px;
+  font-size:16px;
   padding:8px 12px;
   position:absolute;
-  top:0;
+  left:13em;
+}
+.vNumbertext{
+  color:#f2f2f2;
+  font-size:16px;
+  padding:8px 12px;
+  position:absolute;
+  left:26em;
 }
 .dot, .vDot{
   cursor:pointer;
@@ -99,6 +107,14 @@ header, footer{
 }
 header{
   width:100%;
-  height:10%;
+  height:20%;
   margin-bottom:20px;
+}
+.navbar{
+  background-color:#2b2929;
+  color:white;
+  border:none;
+}
+.navbar-header{
+  
 }

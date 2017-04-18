@@ -7,7 +7,6 @@
     $('.mDots').hide();
     $('.slideshow-container').show();
     $('.pDots').show();
-    showSlides(slideIndex, 'v');
   });// End `.Pictures`
 
   $('.videoLink').on('click', function(){
@@ -15,6 +14,7 @@
     $('.mDots').show();
     $('.slideshow-container').hide();
     $('.pDots').hide();
+    showSlides(slideIndex, 'v');
   });// End `.Movies`
 
   $('.dot').on('click', function(){
